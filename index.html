@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <script src="script.js"></script> -->
+    
+    <h1 class="editor-heading">Online Compiler for HTML, CSS, JS</h1> <!-- Add this line -->
+
+    <div class="code-editor-container">
+        <!-- HTML editor -->
+        <div class="code-editor html-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="html.png" alt="" width="20px">
+                    <span>HTML</span>
+                </div>
+                <div class="right-head">
+                    <img src="copy.svg" alt="" class="copy copy1">
+                </div>
+            </div>
+            <textarea class="html-input" spellcheck="false"></textarea>
+        </div>
+
+        <!-- CSS editor -->
+        <div class="code-editor css-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="css.png" alt="" width="25px">
+                    <span>CSS</span>
+                </div>
+                <div class="right-head">
+                    <img src="copy.svg" alt="" class="copy copy2">
+                </div>
+            </div>
+            <textarea class="css-input" spellcheck="false"></textarea>
+        </div>
+
+        <!-- JS editor -->
+        <div class="code-editor js-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="js.png" alt="" width="25px">
+                    <span>JS</span>
+                </div>
+                <div class="right-head">
+                    <img src="copy.svg" alt="" class="copy copy3">
+                </div>
+            </div>
+            <textarea class="js-input" spellcheck="false"></textarea>
+        </div>
+    </div>
+
+    <!-- Output section -->
+    <div class="output-container">
+        <div class="output-head">
+            <span>OUTPUT</span>
+            <img id="save" src="save.svg" alt="">
+            <img src="full.svg" alt="" id="full">
+        </div>
+        <iframe id="output"></iframe>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
